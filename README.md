@@ -6,12 +6,12 @@ To Sum an Array values Javascript is very easy
 
 using reducer 
 [array].reduce((accumulator, currentValue) => accumulator + currentValue, defaultValue)
-~~~
+~~~ javascript
 const sumTotal = [1,2,3,4].reduce((a, b) => a+b, 0) // return 10
 ~~~
 ## Example:
 
-~~~
+~~~ javascript
 console.log(
   [1, 2, 3, 4].reduce((a, b) => a + b, 0)
 ) // return 10
@@ -23,14 +23,14 @@ console.log(
 ~~~
 
 Let's do it you have an array like this:
-~~~
+~~~ javascript
 const arr = [1, 2, 3, 4];
 ~~~
 To sum all values show some algoritms:
 
 ### 1) Using built-in reduce()
 
-~~~
+~~~ javascript
 function total(arr) {
   if(!Array.isArray(arr)) return;
   return arr.reduce((a, v)=>a + v);
@@ -38,7 +38,7 @@ function total(arr) {
 ~~~
 ### 2) Using the command's for loop
 
-~~~
+~~~ javascript
 function total(arr) {
   if(!Array.isArray(arr)) return;
   let totalSum = 0;
@@ -51,7 +51,7 @@ function total(arr) {
 
 ### 3) Using comand's while loop
 
-~~~
+~~~ javascript
 function total(arr) {
   if(!Array.isArray(arr)) return;
   let totalSum = 0, i=-1;
@@ -64,7 +64,7 @@ function total(arr) {
 ~~~
 ### 4) Using array forEach
 
-~~~
+~~~ javascript
 function total(arr) {
   if(!Array.isArray(arr)) return;
   let totalSum=0;
@@ -76,5 +76,6 @@ function total(arr) {
 ~~~
 ### Call to the function:
 
-~~~
+~~~ javascript
 total(arr); //return 10
+~~~ 
